@@ -1,0 +1,44 @@
+@import "../../App.scss";
+
+.mission {
+	width: 100%;
+	background-color: white;
+	margin: 120px 0;
+}
+
+.info {
+	width: 60%;
+	.title {
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 42px;
+		color: #e84514;
+	}
+	.text {
+		color: #171313;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 12px;
+	}
+}
+.images {
+	width: 40%;
+	height: 449px;
+	.image {
+		width: 399px;
+		height: 430px;
+	}
+}
+.wrapper {
+	max-width: $core-wrapper-width;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	vertical-align: middle;
+	padding: 22px;
+	@include tablet {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,3 @@
+const data_team = [{ name: 'Уляна Кашепа', role: 'Засновниця та голова ГО', imageSrc: 'team_kateryna_burdylo.png' }, { name: 'Олександра Лугівщик', role: 'Проєктна менеджерка', imageSrc: 'team_oleksandra_luhivshchyk.png' }, { name: 'Богдана Турів', role: 'Менеджерка з комунікацій', imageSrc: 'team_bohdana_turiv.png' }, { name: 'Роман Мельник', role: 'Менеджер спільноти', imageSrc: 'team_roman_melnyk.png' }, { name: 'Катерина Білохвіст', role: 'Супер-тренерка', imageSrc: 'team_kateryna_bilohvist.png' }, { name: 'Катерина Бурдило', role: 'Супер-тренерка', imageSrc: 'team_kateryna_burdylo.png' }];
+
+export default data_team;

@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.banner {
+	width: 100%;
+	background-color: #e84514;
+}
+
+.info {
+	color: white;
+	width: 50%;
+	.title {
+		font-size: 87px;
+		font-weight: 400;
+		line-height: 85px;
+	}
+	.motto {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 22px;
+		margin-top: 12px;
+	}
+}
+.images {
+	width: 50%;
+	position: relative;
+	height: 449px;
+
+	.image {
+		position: absolute;
+		width: 380px;
+		height: 380px;
+	}
+	.topImg {
+		top: 0;
+		right: 0;
+	}
+	.bottomImg {
+		left: 0;
+		bottom: 0;
+	}
+}
+.wrapper {
+	max-width: 1650px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	vertical-align: middle;
+	padding: 40px 22px 120px 22px;
+	@include tablet {
+		flex-direction: column;
+	}
+}
