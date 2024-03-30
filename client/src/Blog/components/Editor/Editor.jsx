@@ -54,7 +54,7 @@ function Editor({ onClose, posts, addPost }) {
     formData.append('mainPhoto', image);
 
     try {
-      const response = await fetch('http://localhost:8080/api/article', {
+      const response = await fetch(`${URL}/api/article`, {
         method: 'POST',
         body: formData,
       });

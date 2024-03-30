@@ -13,7 +13,7 @@ function Clause() {
     // Функція для завантаження інформації про статтю
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/api/article/${id}`);
+        const response = await fetch(`${URL}/api/article/${id}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { TextField, Button, Typography } from '@mui/material';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-import styles from './signIn.module.scss'
+import styles from './signIn.module.scss';
+
 const focusColor = '#E84514';
-const SignIn =()=> {
+
+const SignIn = () => {
   const [credentials, setCredentials] = useState({ name: '', password: '' });
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -18,9 +19,16 @@ const SignIn =()=> {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', credentials);
-      if (response.data.successful) {
-        localStorage.setItem('token', response.data.token);
+      const response = await fetch(`${URL}/api/auth/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(credentials),
+      });
+      const data = await response.json();
+      if (response.ok && data.successful) {
+        localStorage.setItem('token', data.token);
         navigate('/blog');
       } else {
         setError('Неправильні ім’я користувача або пароль.');
@@ -29,25 +37,33 @@ const SignIn =()=> {
       setError('Помилка авторизації. Спробуйте знову.');
     }
   };
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      // Якщо у локальному сховищі є токен, перевіряємо його валідність
-      axios.get('http://localhost:8080/api/users/me', {
+      fetch(`${URL}/api/users/me`, {
         headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      }).then(response => {
-        if (response.data.user) {
-          // Якщо токен валідний, перенаправляємо на /blog
-          navigate('/blog');
-        }
-      }).catch(() => {
-        // Якщо токен не валідний, можна залишити користувача на сторінці входу
-        localStorage.removeItem('token');
-      });
+          'Authorization': `Bearer ${token}`,
+        },
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Not authenticated');
+          }
+          return response.json();
+        })
+        .then(data => {
+          if (data.user) {
+            navigate('/blog');
+          }
+        })
+        .catch(() => {
+          localStorage.removeItem('token');
+          // Optionally redirect user to login page or display a message
+        });
     }
   }, [navigate]);
+
   return (
     <div className={styles.wrapper}>
       <Typography variant="h6" style={{ marginBottom: '16px' }}>Вхід</Typography>
@@ -110,6 +126,6 @@ const SignIn =()=> {
       </form>
     </div>
   );
-}
+};
 
 export default SignIn;

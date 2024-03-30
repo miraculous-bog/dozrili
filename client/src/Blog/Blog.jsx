@@ -6,7 +6,7 @@ import Box from '@mui/material/Box'; // Corrected import
 import Editor from './components/Editor';
 import styles from './blog.module.scss';
 import Typography from '@mui/material/Typography';
-
+import URL from '../helper/data';
 const Blog = () => {
   const [open, setOpen] = useState(false);
   const [articles, setArticles] = useState([]); // Стан для зберігання статей
@@ -16,7 +16,7 @@ const Blog = () => {
   const handleDelete = async (articleId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/article/${articleId}`, {
+      const response = await fetch(`${URL}/api/article/${articleId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -48,7 +48,7 @@ const Blog = () => {
         return;
       }
 
-      const response = await fetch('http://localhost:8080/api/users/me', {
+      const response = await fetch(`${URL}/api/users/me`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -70,7 +70,7 @@ const Blog = () => {
   // Функція для завантаження статей
   const fetchArticles = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/article');
+      const response = await fetch(`${URL}/api/article`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -82,13 +82,14 @@ const Blog = () => {
   };
 
   useEffect(() => {
+    console.log(URL);
     checkAuthorization();
     fetchArticles();
   }, []);
 
   const saveNewArticle = async (value) => {
     try {
-      const response = await fetch('http://localhost:8080/api/article');
+      const response = await fetch(`${URL}/api/article`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
