@@ -1,0 +1,58 @@
+:root {
+  --main-color: #E84514;
+  --bg-color: #131313;
+  --core-color: #ACBE1A;
+}
+$core-wrapper-width: 1130px;
+$main-color: #E84514;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /* Видаляє підкреслення */
+  color: inherit; /* Посилання буде того ж кольору, що й текст навколо */
+  cursor: pointer; /* Надає вигляд курсора, коли наводиш на посилання */
+
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none; /* Видаляє контур, який з'являється при фокусуванні на елемент */
+  }
+}
+ul {
+  list-style-type: none;
+}
+// .wrapper {
+//   background-color: white;
+//   max-width: 1650px;
+//   margin: 0 auto 0 auto;
+//   padding: 30px;
+// }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

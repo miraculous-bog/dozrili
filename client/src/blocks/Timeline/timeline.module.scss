@@ -1,0 +1,77 @@
+@import "../../App.scss";
+
+.banner {
+	width: 100%;
+	background-color: #e84514;
+}
+.container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.wrapper {
+	width: 100%;
+	background-color: #e84514;
+}
+.info {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	.title {
+		color: #0c4a30;
+		font-family: Benzin-Bold;
+		font-size: 40px;
+		font-weight: 400;
+		line-height: 46.25px;
+	}
+}
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #fff;
+		background-color: #ccc;
+		border-radius: 50%;
+		transition: background-color 0.3s;
+	}
+
+	&.active::before {
+		background-color: #0f0; // Active step color
+	}
+
+	&:not(:last-child) .timeline-line {
+		width: 100px; // Line length
+		height: 2px;
+		background-color: #ccc;
+		position: absolute;
+		top: 10px; // Adjust this based on the exact size and position of your circles
+		right: -100px; // Adjust based on line length and item width
+	}
+}
+
+.itemContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 12px; // Distance from the timeline
+}
+
+.itemTitle {
+	background-color: #ffa500; // Orange background
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	font-size: 14px; // Match your design
+}
+
+// Your SCSS might need to adjust the sizing, spacing, and responsive behavior to match the design precisely.

@@ -1,0 +1,35 @@
+@import "../../App.scss";
+.footer {
+	width: 100%;
+	padding: 120px 0;
+	background-color: $main-color;
+	color: #fff;
+	.wrapper {
+		max-width: $core-wrapper-width;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		.contactList {
+		  }
+		  
+		  .contactItem {
+			color: #fff; // Білий колір тексту
+			text-decoration: none; // Видалення підкреслення
+		  display: block;
+			&:hover {
+			  .icon {
+				fill: #000; // Чорний колір іконки при наведенні
+			  }
+			}
+		  }
+		  
+		  .icon {
+			fill: #fff; // Білий колір іконки за замовчуванням
+			transition: fill 0.3s; // Плавна зміна кольору
+		  }
+
+	}
+	.address {
+		text-align: center;
+	}
+}
