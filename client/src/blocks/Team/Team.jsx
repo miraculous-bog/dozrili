@@ -13,7 +13,7 @@ const Team = () => {
 	const path = 'https://github.com/miraculous-bog/dozrili/blob/main/src/content_images/photos/';
 	console.log(data_team);
 	return (
-		<div className={styles.team}>
+		<div className={styles.team} id="team">
 			<div className={styles.titleContainer}>
 				<div className={styles.images}>
 					<img className={`${styles.image} ${styles.topImg}`} src={OrangeSmille} alt="orangeSmille" />
@@ -25,7 +25,7 @@ const Team = () => {
 				{data_team.map((cardMemberData) =>
 				(<CardMember name={cardMemberData.name}
 					role={cardMemberData.role}
-					imageSrc={`https://github.com/miraculous-bog/dozrili/blob/main/src/content_images/photos/${cardMemberData.imageSrc}?raw=true`}
+					imageSrc={`https://github.com/miraculous-bog/dozrili/blob/main/client/src/content_images/photos/${cardMemberData.imageSrc}?raw=true`}
 					key={cardMemberData.name} />)
 				)}
 

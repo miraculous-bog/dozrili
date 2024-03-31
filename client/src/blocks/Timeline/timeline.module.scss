@@ -1,11 +1,8 @@
 @import "../../App.scss";
 
-.banner {
-	width: 100%;
-	background-color: #e84514;
-}
 .container {
 	display: flex;
+	justify-content: space-around;
 	align-items: center;
 	position: relative;
 }
@@ -13,10 +10,31 @@
 	width: 100%;
 	background-color: #e84514;
 }
+.center {
+	padding: 80px 0;
+	max-width: $core-wrapper-width;
+	margin: 0 auto;
+	@include mobile {
+		padding: 20px 0;
+
+	}
+}
 .info {
 	background-color: #fff;
 	border-radius: 20px;
 	padding: 20px;
+	.text {
+		//styleName: body;
+		font-family: Fixel Variable;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 17.44px;
+		text-align: left;
+	}
+	@include tablet {
+		margin: 10px;
+	}
+	// margin-top: 65px;
 	.title {
 		color: #0c4a30;
 		font-family: Benzin-Bold;
@@ -35,18 +53,33 @@
 	&::before {
 		content: "";
 		display: block;
-		width: 20px;
-		height: 20px;
+		width: 52px;
+		height: 52px;
 		border: 2px solid #fff;
-		background-color: #ccc;
+		background: #ffad94;
+		cursor: pointer;
 		border-radius: 50%;
 		transition: background-color 0.3s;
 	}
-
-	&.active::before {
-		background-color: #0f0; // Active step color
+	&::after {
+		content: "";
+		margin-top: -12px;
+		width: 6px;
+		height: 65px;
+		background-color: $main-color;
+		transition: background-color 0.3s;
 	}
-
+	&.active::before {
+		background-color: #0c4a30;
+	}
+	&.active::after {
+		content: "";
+		margin-top: -13px;
+		width: 6px;
+		height: 75px;
+		background-color: white;
+		transition: background-color 0.3s;
+	}
 	&:not(:last-child) .timeline-line {
 		width: 100px; // Line length
 		height: 2px;
@@ -62,16 +95,6 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 12px; // Distance from the timeline
-}
-
-.itemTitle {
-	background-color: #ffa500; // Orange background
-	color: #fff;
-	padding: 4px 8px;
-	border-radius: 4px;
-	text-align: center;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-	font-size: 14px; // Match your design
 }
 
 // Your SCSS might need to adjust the sizing, spacing, and responsive behavior to match the design precisely.

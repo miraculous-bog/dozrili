@@ -1,42 +1,12 @@
 @import "../App.scss";
 // MemberCard.module.scss
-.articleCard {
-	color: #171313;
-	cursor: pointer;
-	max-width: 360px;
-	.imgBlock {
-		max-width: 100%;
-		width: 360px;
-		height: 300px;
-		display: flex; // включаємо flexbox для контейнера
-		align-items: center; // центруємо зображення по вертикалі
-		justify-content: center;
-		.img {
-			max-width: 100%;
-			max-height: 300px;
-			object-fit: cover;
-		}
-	}
-	.title {
-		font-size: 20px;
-		font-weight: 700;
-		line-height: 21px;
-		margin: 16px 0 8px 0;
-	}
-	.category {
-		font-size: 18px;
-		font-weight: 300;
-		line-height: 11.52px;
-		display: inline-block;
 
-		padding: 10px;
-		border: 1px solid #0c4a30;
-		border-radius: 20px;
-	}
-}
 .wrraper {
 	max-width: $core-wrapper-width;
 	margin: 0 auto;
+	@include tablet {
+		margin: 10px;
+	}
 }
 .title {
 	font-size: 35px;

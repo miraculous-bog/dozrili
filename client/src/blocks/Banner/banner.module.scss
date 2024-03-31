@@ -19,6 +19,22 @@
 		line-height: 22px;
 		margin-top: 12px;
 	}
+	@include tablet {
+		width: 100%;
+		text-align: center;
+		.title {
+			font-size: 48px; // Зменшено для планшетів
+			line-height: 48px;
+		}
+		.motto {
+			font-size: 20px; // Зменшено для планшетів
+		}
+	}
+	@include mobile {
+		.motto {
+			font-size: 18px; // Зменшено для мобільних
+		}
+	}
 }
 .images {
 	width: 50%;
@@ -40,6 +56,32 @@
 		left: 0;
 		bottom: 0;
 	}
+	@include tablet {
+		width: 100%;
+		.image {
+			width: 300px; // Зменшено для планшетів
+			height: 300px; // Зменшено для планшетів
+		}
+		
+	
+	}
+
+	@include mobile {
+		// height: auto;
+		height: 349px;
+		.image {
+			width: 240px; // Зменшено для мобільних
+			height: 240px; // Зменшено для мобільних
+		}
+		.topImg {
+			top: 0;
+			right: 0;
+		}
+		.bottomImg {
+			left: 0;
+			bottom: 0%;
+		}
+	}
 }
 .wrapper {
 	max-width: $core-wrapper-width;
@@ -52,5 +94,13 @@
 	padding: 40px 22px 120px 22px;
 	@include tablet {
 		flex-direction: column;
+	}
+	@include tablet {
+		padding: 20px; // Зменшено відступи для планшетів
+		flex-direction: column;
+	}
+
+	@include mobile {
+		padding: 5px; // Зменшено відступи для мобільних
 	}
 }

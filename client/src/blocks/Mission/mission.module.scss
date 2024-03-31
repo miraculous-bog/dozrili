@@ -3,8 +3,10 @@
 .mission {
 	width: 100%;
 	background-color: white;
-	// margin: 120px 0;
 	padding: 120px 0;
+	@include tablet {
+		padding: 60px 0;
+	}
 }
 
 .info {
@@ -21,15 +23,33 @@
 		font-weight: 300;
 		line-height: 12px;
 	}
-}
-.images {
-	width: 40%;
-	height: 449px;
-	.image {
-		width: 399px;
-		height: 430px;
+	@include tablet{
+		width: 100%;
+	}
+	@include mobile {
+		.title {
+			font-size: 20px;
+			line-height:23.12px;
+			font-weight: 400;
+		}
+		.text {
+			color: #171313;
+			font-size: 10px;
+			font-weight: 300;
+			line-height: 12px;
+		}
 	}
 }
+
+.image {
+	width: 399px;
+	height: 430px;
+	@include mobile {
+		width: 286px;
+		height: 307px;
+	}
+}
+
 .wrapper {
 	max-width: $core-wrapper-width;
 	display: flex;
@@ -41,5 +61,9 @@
 	padding: 22px;
 	@include tablet {
 		flex-direction: column;
+	}
+	@include mobile {
+		flex-direction: column;
+		padding: 10px;
 	}
 }

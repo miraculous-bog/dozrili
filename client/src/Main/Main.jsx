@@ -14,16 +14,15 @@ import styles from './main.module.scss';
 const Main = () => {
   return (
     <div className={styles.main}>
-		<Banner />
-		<Mission />
-    <Timeline />
-    <Team />
-    <Values />
-    <Purpose />
-    <Map />
-    <Partners />
-      {/* <Slider /> */}
-      {/* <Tabel /> */}
+      <Banner />
+      <Mission />
+      <Timeline />
+      <Team />
+      <Values />
+      <Purpose />
+      <Map />
+     <Partners />
+ 
     </div>
   );
 };

@@ -8,7 +8,7 @@ import styles from './mission.module.scss';
 
 const Banner = () => {
 	return (
-		<div className={styles.mission}>
+		<div className={styles.mission} id="mission">
 			<div className={styles.wrapper}>
 				<div className={styles.info}>
 					<p className={styles.text}>місія ГО “ДОЗРІЛІ”:</p>

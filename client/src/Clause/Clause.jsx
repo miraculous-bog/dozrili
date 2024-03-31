@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
 import { Link, useParams } from 'react-router-dom';
 
-
+import URL from '../helper/data';
 function Clause() {
   const [article, setArticle] = useState(null);
   const { id } = useParams(); // Отримуємо id з URL

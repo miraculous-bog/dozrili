@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .button {
 	border-radius: 8px;
 	background-color: #04745C;
@@ -12,4 +14,8 @@
 	// top: 50%;
 	// left: 50%; /* замінено right на left для коректного центрування */
 	z-index: 100;
+	// @include tablet {
+	// 	padding: 20px; // Зменшено відступи для планшетів
+	// 	flex-direction: column;
+	// }
 }

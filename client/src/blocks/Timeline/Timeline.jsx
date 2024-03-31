@@ -16,20 +16,20 @@ const Timeline = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.continer}>
+			<div className={styles.center}>
+			<div className={styles.container}>
 				{steps.map((step, index) => (
 					<div key={step.time} className={`${styles.item} ${index === activeIndex ? styles.active : ''}`} onClick={() => setActiveIndex(index)}>
 						<div className={styles.itemContent}>
-							<span className={styles.itemTitle}>{step.time}</span>
-							{/* Display more content based on the step, if necessary */}
 						</div>
 						{index < steps.length - 1 && <div className={styles.line}></div>}
 					</div>
 				))}
-				<div className={styles.info}>
-					<h2 className={styles.title}>{steps[activeIndex].time}</h2>
-					<p className={styles.text}>{steps[activeIndex].content}</p>
-				</div>
+			</div>
+			<div className={styles.info}>
+				<h2 className={styles.title}>{steps[activeIndex].time}</h2>
+				<p className={styles.text}>{steps[activeIndex].content}</p>
+			</div>
 			</div>
 		</div>
 	);

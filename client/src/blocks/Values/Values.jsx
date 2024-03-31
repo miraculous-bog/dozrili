@@ -8,7 +8,7 @@ import styles from './values.module.scss';
 
 const Values = () => {
 	return (
-		<div className={styles.values}>
+		<div className={styles.values} id="project">
 			<h1 className={styles.title}>наші цінності:</h1>
 			<div className={styles.items}>
 				<div className={styles.item}>
