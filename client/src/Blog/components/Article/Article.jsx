@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'; // Corrected import
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const URL = `http://localhost:8080/`;
+import URL from '../../../helper/data';
 
 function Article({ id, title, category, image, createdDate, isVisibleBtn,onDelete }) {
   return (

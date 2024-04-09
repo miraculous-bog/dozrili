@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'
 import 'react-quill/dist/quill.snow.css';
-
+import URL from '../../../helper/data';
 import styles from './editor.module.scss';
 // import { addArticle } from '../../../../../server/src/controllers/articleController';
 
