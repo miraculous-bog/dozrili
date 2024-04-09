@@ -15,7 +15,7 @@ function Article({ id, title, category, image, createdDate, isVisibleBtn,onDelet
     >
       <Link to={`/blog/${id}`}>
         <div className={styles.imgBlock}>
-          <img src={URL + image} alt={`${title}`} className={styles.img} />
+          <img src={`${URL}/${image}`} alt={`${title}`} className={styles.img} />
         </div>
         <p className={styles.title}>{title}</p>
         <div className={styles.category}>{category}</div>
