@@ -1,13 +1,13 @@
 import React from 'react';
 
-import PartnerOrangeGreat from '../../content_images/partner_Orange_Great.png';
-import PartnerUal from '../../content_images/partner_ual.png';
-import PartnerOfficeDii from '../../content_images/partner_office_dii.png';
-import PartnerPramyemoRazom from '../../content_images/partner_pramyemo_razom.png';
-import PartnerGapYear from '../../content_images/partner_gap_year.png';
-import PartnerTeploSerdni from '../../content_images/partner_teplo_serdni.png';
-import PartnerMcv from '../../content_images/partner_mcv.png';
-import PartnerKaritas from '../../content_images/partner_karitas.png';
+import PartnerOrangeGreat from '../../content_images/partner_Orange_Great.svg';
+import PartnerUal from '../../content_images/partner_ual.svg';
+import PartnerOfficeDii from '../../content_images/partner_office_dii.svg';
+import PartnerPramyemoRazom from '../../content_images/partner_pramyemo_razom.svg';
+import PartnerGapYear from '../../content_images/partner_gap_year.svg';
+import PartnerTeploSerdni from '../../content_images/partner_teplo_serdni.svg';
+import PartnerMcv from '../../content_images/partner_mcv.svg';
+import PartnerKaritas from '../../content_images/partner_karitas.svg';
 
 import styles from './partners.module.scss';
 

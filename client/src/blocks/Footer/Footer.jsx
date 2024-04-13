@@ -10,7 +10,6 @@ const Partners = () => {
 
 	return (
 		<div className={styles.footer}>
-			<Logo />
 			<div className={styles.wrapper}>
 				<div className={styles.data}>
 					<h3 className={styles.title}>Громадська організація «ДОЗРІЛІ»</h3>
@@ -24,10 +23,6 @@ const Partners = () => {
 				<div className={styles.contacts}>
 					<h3 className={styles.title}>Контакти</h3>
 					<ul className={styles.contactList}>
-						<a href="tel:+380501504129" className={styles.contactItem}>
-							<PhoneIcon className={styles.icon} />
-							<span>050-150-41-29</span>
-						</a>
 						<a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem}>
 							<EmailIcon className={styles.icon} />
 							<span>dozril.ngo@gmail.com</span>

@@ -1,8 +1,9 @@
 import React from 'react';
 
 
-import OrangeDefault from '../../content_images/OrangeDefault.png'
 import OrangeConfident from '../../content_images/OrangeConfident.png'
+import OrangeCute from '../../content_images/OrangeCute.png'
+import OrangeDouble from '../../content_images/OrangeDouble.png'
 
 import styles from './values.module.scss';
 
@@ -19,14 +20,14 @@ const Values = () => {
 					</div>
 				</div>
 				<div className={styles.item}>
-					<img className={styles.image} src={OrangeConfident} alt="rozvytok" />
+					<img className={styles.image} src={OrangeCute} alt="rozvytok" />
 					<div className={styles.info}>
 						<h3 className={styles.title}>Комфорт</h3>
 						<p className={styles.text}>Ми навчаємося за принципом рівний-рівному і застосовуємо засади ненасильницької комунікації та травма-інформаваного підходу</p>
 					</div>
 				</div>
 				<div className={styles.item}>
-					<img className={styles.image} src={OrangeConfident} alt="rozvytok" />
+					<img className={styles.image} src={OrangeDouble} alt="rozvytok" />
 					<div className={styles.info}>
 						<h3 className={styles.title}>Спільнота</h3>
 						<p className={styles.text}>Ми створюємо безпечний простір для взаємодії, де люди довіряють і приймають одне одного такими, якими вони насправді є</p>

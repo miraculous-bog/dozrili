@@ -8,6 +8,7 @@ import Purpose from '../blocks/Purpose';
 import Map from '../blocks/Map';
 import Partners from '../blocks/Partners/Partners';
 import Timeline from '../blocks/Timeline';
+import Way from '../blocks/Way';
 
 import styles from './main.module.scss';
 
@@ -16,13 +17,14 @@ const Main = () => {
     <div className={styles.main}>
       <Banner />
       <Mission />
+      <Way />
       <Timeline />
       <Team />
       <Values />
       <Purpose />
       <Map />
-     <Partners />
- 
+      <Partners />
+
     </div>
   );
 };
