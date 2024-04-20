@@ -1,12 +1,14 @@
 import React from 'react';
 import { ReactComponent as PhoneIcon } from '../../icons/phone.svg'; // Змініть шлях до вашого SVG файлу
-import { ReactComponent as EmailIcon } from '../../icons/email.svg'; // Змініть шлях до вашого SVG файлу
-import { ReactComponent as InstagramIcon } from '../../icons/location.svg';
+import { ReactComponent as EmailIcon } from '../../icons/mail.svg'; // Змініть шлях до вашого SVG файлу
+import { ReactComponent as InstagramIcon } from '../../icons/instagram.svg';
+import { ReactComponent as LinkedinIcon } from '../../icons/linkedin.svg';
+import { ReactComponent as FacebookIcon } from '../../icons/facebook.svg';
 import Logo from '../Header/components/Logo/Logo';
 
 import styles from './footer.module.scss';
 
-const Partners = () => {
+const Footer = () => {
 
 	return (
 		<div className={styles.footer}>
@@ -23,6 +25,10 @@ const Partners = () => {
 				<div className={styles.contacts}>
 					<h3 className={styles.title}>Контакти</h3>
 					<ul className={styles.contactList}>
+						<a href="https://www.linkedin.com/company/dozrili/" className={styles.contactItem}>
+							<LinkedinIcon className={styles.icon} />
+							<span>лінкедін</span>
+						</a>
 						<a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem}>
 							<EmailIcon className={styles.icon} />
 							<span>dozril.ngo@gmail.com</span>
@@ -30,6 +36,10 @@ const Partners = () => {
 						<a href="https://www.instagram.com" className={styles.contactItem}>
 							<InstagramIcon className={styles.icon} />
 							<span>Instagram</span>
+						</a>
+						<a href=" https://www.facebook.com/dozrili" className={styles.contactItem}>
+							<FacebookIcon className={styles.icon} />
+							<span>фейсбук</span>
 						</a>
 					</ul>
 				</div>
@@ -39,4 +49,4 @@ const Partners = () => {
 	);
 };
 
-export default Partners;
+export default Footer;

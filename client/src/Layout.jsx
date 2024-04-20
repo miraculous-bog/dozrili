@@ -5,8 +5,7 @@ import Header from './blocks/Header';
 // import Footer from './pages/Footer';
 
 import './App.scss';
-import Footer from './blocks/Footer';
-
+import Footer from './blocks/Footer/Footer';
 const Layout = () => {
   return (
     <>

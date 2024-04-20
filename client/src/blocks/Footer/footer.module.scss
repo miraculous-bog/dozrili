@@ -17,14 +17,23 @@
 			flex-direction: column;
 		}
 		.contactList {
+			margin-top: 10px;
 		}
-		.contacts {
-			margin: 20px 0;
+		// .contacts {
+		// 	margin: 20px 0;
+		// }
+		.contactInfo {
+			margin-top: 10px;
 		}
 		.contactItem {
 			color: #fff; // Білий колір тексту
 			text-decoration: none; // Видалення підкреслення
-			display: block;
+			display: flex; // Зробити елемент flex контейнером
+			align-items: center;
+			margin: 5px 0;
+			.icon {
+				margin-right: 10px;
+			}
 			&:hover {
 				.icon {
 					fill: #000; // Чорний колір іконки при наведенні

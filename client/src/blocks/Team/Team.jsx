@@ -25,6 +25,7 @@ const Team = () => {
 				{data_team.map((cardMemberData) =>
 				(<CardMember name={cardMemberData.name}
 					role={cardMemberData.role}
+					link={cardMemberData.link}
 					imageSrc={`https://github.com/miraculous-bog/dozrili/blob/main/client/src/content_images/photos/${cardMemberData.imageSrc}?raw=true`}
 					key={cardMemberData.name} />)
 				)}

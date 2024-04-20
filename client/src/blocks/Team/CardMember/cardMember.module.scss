@@ -7,11 +7,11 @@
 		content: '';
 		position: absolute;
 		top: 0px; // Змістіть листочок до верху картки
-		left: 50%; // Центрування по горизонталі
+		left: 70%; // Центрування по горизонталі
 		transform: translateX(-50%); // Точне центрування листочка
 		width: 100px; // Ширина листочка
 		height: 105px; // Висота листочка
-		background: url('../../../content_images/plant.png') no-repeat center center;
+		background: url('../../../content_images/plant.svg') no-repeat center center;
 		background-size: cover;
 		z-index: 10; // Вище за інші елементи
 	  }
@@ -20,7 +20,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 240px; // Можете змінити залежно від потреб
-	height: 330px;
+	height: 380px;
 	margin-top: 105px;
 	border: 1px solid $main-color; // Колір межі з вашого зображення
 	border-radius: 20px; // М'які краї
@@ -36,7 +36,11 @@
 		border-radius: 20px;
 	}
 }
-
+.icons {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
 .info {
 	padding: 8px; // Поле всередині для тексту
 	text-align: center; // Текст по центру
@@ -51,6 +55,6 @@
 		margin-top: 8px 0 12px 0;
 		font-size: 14px;
 		font-size: 18px;
-		line-height: 12px;
+		line-height: 25px;
 	}
 }

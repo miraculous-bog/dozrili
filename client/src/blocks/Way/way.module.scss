@@ -27,6 +27,8 @@
 	line-height: 55.5px;
 	text-align: left;
 	color: $main-color;
+	z-index: 1;
+	position: relative;
 	@include tablet {
 		font-size: 24px;
 	}
@@ -34,7 +36,7 @@
 .leaf {
 	position: absolute;
 	left: 0;
-	bottom: 0%;
+	bottom: -2%;
 	@include tablet {
 		max-width: 58px;
 	}
@@ -42,16 +44,18 @@
 .tree {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -2%;
+	z-index: 0;
 	max-width: 345px;
 	@include tablet {
 		max-width: 217px;
+		right: -5%;
 	}
 }
 .arrow {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 45%;
 	margin: 300px auto 0 auto;
 	@include tablet {
 		margin: 120px auto 0 auto;
