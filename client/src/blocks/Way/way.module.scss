@@ -15,7 +15,7 @@
 
 	// align-items: center;
 	// vertical-align: middle;
-	padding: 0 40px;
+	padding: 0 20px;
 	position: relative;
 	@include tablet {
 		height: 277px;
@@ -24,7 +24,7 @@
 .title {
 	font-size: 48px;
 	font-weight: 400;
-	line-height: 55.5px;
+	line-height: 35.5px;
 	text-align: left;
 	color: $main-color;
 	z-index: 1;
