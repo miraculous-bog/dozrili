@@ -1,7 +1,7 @@
 @import "../../App.scss";
 .footer {
 	width: 100%;
-	padding: 120px 0;
+	padding: 70px 0;
 	background-color: $main-color;
 	color: #fff;
 	@include tablet {
@@ -47,6 +47,7 @@
 		}
 	}
 	.address {
+		margin-top: 20px;
 		text-align: center;
 	}
 }

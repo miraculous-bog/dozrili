@@ -6,7 +6,7 @@
 	&::before {
 		content: '';
 		position: absolute;
-		top: 0px; // Змістіть листочок до верху картки
+		top: -103px; // Змістіть листочок до верху картки
 		left: 70%; // Центрування по горизонталі
 		transform: translateX(-50%); // Точне центрування листочка
 		width: 100px; // Ширина листочка
@@ -19,9 +19,9 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	width: 240px; // Можете змінити залежно від потреб
-	height: 390px;
-	margin-top: 105px;
+	align-items: center;
+	height: 420px;
+	margin: 135px 20px 0 20px;
 	border: 1px solid $main-color; // Колір межі з вашого зображення
 	border-radius: 20px; // М'які краї
 	overflow: hidden; // Обрізати вміст за рамки
@@ -30,10 +30,13 @@
 	padding: 6px;
 
 	.photo {
-		width: 100%; // Фото на всю ширину картки
+		width: 100%;
 		height: auto; // Збереження пропорцій фото
 		object-fit: cover; // Заповнення простору фото без втрати пропорцій
 		border-radius: 20px;
+		@include mobile {
+			width: 255px;
+		}
 	}
 }
 .icons {

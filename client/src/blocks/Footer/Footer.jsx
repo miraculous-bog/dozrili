@@ -25,21 +25,21 @@ const Footer = () => {
 				<div className={styles.contacts}>
 					<h3 className={styles.title}>Контакти</h3>
 					<ul className={styles.contactList}>
-						<a href="https://www.linkedin.com/company/dozrili/" className={styles.contactItem}>
+						<a href="https://www.linkedin.com/company/dozrili/" className={styles.contactItem} target="_blank">
 							<LinkedinIcon className={styles.icon} />
-							<span>лінкедін</span>
+							<span>LinkedIn</span>
 						</a>
-						<a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem}>
+						<a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem} target="_blank">
 							<EmailIcon className={styles.icon} />
 							<span>dozril.ngo@gmail.com</span>
 						</a>
-						<a href="https://www.instagram.com" className={styles.contactItem}>
+						<a href="https://www.instagram.com" className={styles.contactItem} target="_blank">
 							<InstagramIcon className={styles.icon} />
 							<span>Instagram</span>
 						</a>
-						<a href=" https://www.facebook.com/dozrili" className={styles.contactItem}>
+						<a href=" https://www.facebook.com/dozrili" className={styles.contactItem} target="_blank">
 							<FacebookIcon className={styles.icon} />
-							<span>фейсбук</span>
+							<span>Facebook</span>
 						</a>
 					</ul>
 				</div>

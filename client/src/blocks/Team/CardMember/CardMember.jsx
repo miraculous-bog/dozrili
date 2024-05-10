@@ -13,9 +13,9 @@ function CardMember({ name, role, imageSrc, link }) {
         <div className={styles.info}>
           <h3 className={styles.name}>{name}</h3>
           <p className={styles.role}>{role}</p>
-          <Link to={link}>
+          <a href={link} target="_blank">
             <InstagramIcon className={styles.icons} />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

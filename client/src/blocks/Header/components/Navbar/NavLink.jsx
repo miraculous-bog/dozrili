@@ -33,35 +33,20 @@ const NavLinks = () => {
         >
           <div className={styles.element}>
             {/* <HomeIcon/> */}
-            <p className={styles.text}>місія</p>
+            <p className={styles.text}>хто ми</p>
           </div>
         </ScrollLink>
-      </motion.li>
-      <motion.li initial={animateFrom} animate={animateTo} className={styles.item}>
-        <ScrollLink
-          to="team" // ID блоку на головній сторінці
-          smooth={true}
-          duration={500}
-          onClick={() => handleNavClick('/', 'team')}
-        >
-
-          <div className={styles.element}>
-            {/* <HomeIcon /> */}
-            <p className={styles.text}>команда</p>
-          </div>
-        </ScrollLink>
-
       </motion.li>
       <motion.li initial={animateFrom} animate={animateTo} className={styles.item}>
         <ScrollLink
           to="project" // ID блоку на головній сторінці
           smooth={true}
           duration={500}
-          onClick={() => handleNavClick('/', 'team')}
+          onClick={() => handleNavClick('/', 'community')}
         >
           <div className={styles.element}>
             {/* <HomeIcon /> */}
-            <p className={styles.text}>проєкти</p>
+            <p className={styles.text}>спільнота</p>
           </div>
         </ScrollLink>
 
@@ -70,7 +55,7 @@ const NavLinks = () => {
         <Link to='/blog'>
 
           <div className={styles.element}>
-            <p className={styles.text}>блог</p>
+            <p className={styles.text}>що ми робимо</p>
           </div>
         </Link>
 

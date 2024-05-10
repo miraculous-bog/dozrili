@@ -1,16 +1,22 @@
 @import "../../App.scss";
 .map {
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
+
 .conteiner {
 	max-width: $core-wrapper-width;
-	margin: 0 auto;
+	margin: 20px auto;
 	display: flex;
 	justify-content: space-between;
 	background-image: url("../../content_images/map.png"); /* Шлях до вашого зображення карти */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 290px 0 380px 0;
+	padding: 340px 0 380px 0;
 	width: 100%;
 	height: auto; /* Висота буде автоматично адаптуватися */
 	@include tablet {
@@ -38,7 +44,6 @@
 		}
 		.empty {
 			height: 8px;
-
 		}
 	}
 }

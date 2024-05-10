@@ -8,10 +8,12 @@ import styles from './map.module.scss';
 const Map = () => {
 	return (
 		<div className={styles.map}>
+			<div className={styles.btn}>
+				<JoinBtn isWideMode={true} />
+			</div>
 			<div className={styles.conteiner}>
 				<div className={styles.buttons}>
-					<JoinBtn isWideMode={true} />
-					<div className={styles.empty}></div>
+					{/* <div className={styles.empty}></div> */}
 					<SupportBtn isWideMode={true} />
 				</div>
 			</div>

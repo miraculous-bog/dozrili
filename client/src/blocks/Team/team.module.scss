@@ -8,12 +8,22 @@
 .wrapper {
 	max-width: $core-wrapper-width;
 	margin: 0 auto;
+	// display: flex;
+	// justify-content: center;
+	// gap: 10px;
+	// @include mobile {
+	// 	gap: 5px;
+	// }
+}
+.carouselstyles {
+	height: 650px;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 10px;
+	justify-content: space-between;
+}
+.carouselitemstyles {
+	height: 620px;
 	@include mobile {
-		gap: 5px;
+		width: 255px;
 	}
 }
 .titleContainer {

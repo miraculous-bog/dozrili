@@ -23,11 +23,16 @@
 	background-color: #fff;
 	border-radius: 20px;
 	padding: 20px;
+	a {
+		text-decoration: underline;
+		font-weight: 600;
+	}
 	.text {
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 20.44px;
 		text-align: left;
+		margin-top: 10px;
 	}
 	@include tablet {
 		margin: 10px;
