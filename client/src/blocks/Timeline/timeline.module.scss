@@ -103,5 +103,14 @@
 	align-items: center;
 	margin-top: 12px; // Distance from the timeline
 }
-
-// Your SCSS might need to adjust the sizing, spacing, and responsive behavior to match the design precisely.
+.carouselstyles {
+	height:350px;
+	// display: flex;
+	// justify-content: space-between;
+}
+.carouselitemstyles {
+	// height: 620px;
+	// @include mobile {
+	// 	width: 255px;
+	// }
+}

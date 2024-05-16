@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
-
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import styles from './timeline.module.scss';
 
 const Timeline = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 	// Assuming there are 5 steps in the timeline, based on the image provided
+	const responsive = {
+		desktop: {
+			breakpoint: { max: 3000, min: 260 },
+			items: 1
+		},
+
+	};
 	const steps = [
 		{ time: '6 липня 2022го', content: 'запустили програму підтримки та розвитку волонтерів за підтримки Європейського Союзу в рамках Стипендіальної програми для лідерів громадянського суспільства країн Східного партнерства' },
 		{ time: 'вересень-листопад 2022го', content: '16 дозрілих менторів та менторок провели 109 локальних воркшопів для 200+ волонтерів з різних куточків України (11 міст, 4 онлайн групи). 93% учасників оцінили рівень корисності програми на високому рівні' },
@@ -20,7 +28,7 @@ const Timeline = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.center}>
-				<div className={styles.container}>
+				{/* <div className={styles.container}>
 					{steps.map((step, index) => (
 						<div key={step.time} className={`${styles.item} ${index === activeIndex ? styles.active : ''}`} onClick={() => setActiveIndex(index)}>
 							<div className={styles.itemContent}>
@@ -28,13 +36,24 @@ const Timeline = () => {
 							{index < steps.length - 1 && <div className={styles.line}></div>}
 						</div>
 					))}
-				</div>
-				<div className={styles.info}>
-					<h2 className={styles.title}>{steps[activeIndex].time}</h2>
-					<p className={styles.text} dangerouslySetInnerHTML={{ __html: steps[activeIndex].content }}></p>
-				</div>
+				</div> */}
+				<Carousel responsive={responsive}
+					swipeable={true}
+					draggable={true}
+					showDots={true}
+					autoplay={true}
+					autoPlaySpeed={2000}
+					containerClass={styles.carouselstyles}
+					itemClass={styles.carouselitemstyles}>
+					{steps.map((step, index) => (
+						<div className={styles.info}>
+							<h2 className={styles.title}>{step.time}</h2>
+							<p className={styles.text} dangerouslySetInnerHTML={{ __html: step.content }}></p>
+						</div>
+					))}
+				</ Carousel>
 			</div>
-		</div>
+		</div >
 	);
 };
 

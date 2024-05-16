@@ -15,7 +15,7 @@ const Banner = () => {
 					<p className={styles.motto}>спільнота підтримки та розвитку</p>
 				</div>
 				<div className={styles.images}>
-					<JoinBtn isWideMode={false}/>
+					{/* <JoinBtn isWideMode={false}/> */}
 					<img className={`${styles.image} ${styles.topImg}`} src={OrangeSmille} alt="orangeSmille" />
 					<img className={`${styles.image} ${styles.bottomImg}`} src={OrangeSmille} alt="orangeSmille" />
 				</div>
