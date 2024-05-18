@@ -41,8 +41,11 @@ const Timeline = () => {
 					swipeable={true}
 					draggable={true}
 					showDots={true}
+					infinite={true}
 					autoplay={true}
 					autoPlaySpeed={2000}
+					arrows={false}
+					renderButtonGroupOutside={true}
 					containerClass={styles.carouselstyles}
 					itemClass={styles.carouselitemstyles}>
 					{steps.map((step, index) => (

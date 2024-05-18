@@ -104,13 +104,15 @@
 	margin-top: 12px; // Distance from the timeline
 }
 .carouselstyles {
-	height:350px;
+	height:250px;
 	// display: flex;
 	// justify-content: space-between;
 }
 .carouselitemstyles {
-	// height: 620px;
-	// @include mobile {
-	// 	width: 255px;
+	.react-multiple-carousel__arrow {
+		bottom: -10%;
+	}
+	// .react-multiple-carousel__arrow--right{
+	// 	rigth: -4%;
 	// }
 }
