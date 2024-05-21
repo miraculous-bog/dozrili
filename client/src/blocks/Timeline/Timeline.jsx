@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import CustomButtonGroup from '../../components/CustomButtons/CustomButtons';
 import styles from './timeline.module.scss';
 
 const Timeline = () => {
@@ -47,7 +48,9 @@ const Timeline = () => {
 					arrows={false}
 					renderButtonGroupOutside={true}
 					containerClass={styles.carouselstyles}
-					itemClass={styles.carouselitemstyles}>
+					itemClass={styles.carouselitemstyles}
+					customButtonGroup={<CustomButtonGroup />}
+					>
 					{steps.map((step, index) => (
 						<div className={styles.info}>
 							<h2 className={styles.title}>{step.time}</h2>

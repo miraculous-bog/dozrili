@@ -28,15 +28,14 @@
 	background-color: $main-color;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Легка тінь для піднятого вигляду
 	padding: 6px;
-
+@include mobile {
+	height: 500px;
+}
 	.photo {
 		width: 100%;
 		height: auto; // Збереження пропорцій фото
 		object-fit: cover; // Заповнення простору фото без втрати пропорцій
 		border-radius: 20px;
-		@include mobile {
-			width: 255px;
-		}
 	}
 }
 .icons {
