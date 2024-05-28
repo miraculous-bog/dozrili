@@ -29,10 +29,10 @@ const Footer = () => {
 							<LinkedinIcon className={styles.icon} />
 							<span>LinkedIn</span>
 						</a>
-						<a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem} target="_blank">
+						{/* <a href="mailto:dozril.ngo@gmail.com" className={styles.contactItem} target="_blank">
 							<EmailIcon className={styles.icon} />
 							<span>dozril.ngo@gmail.com</span>
-						</a>
+						</a> */}
 						<a href="https://www.instagram.com" className={styles.contactItem} target="_blank">
 							<InstagramIcon className={styles.icon} />
 							<span>Instagram</span>

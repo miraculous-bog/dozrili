@@ -14,12 +14,12 @@ const Banner = () => {
 		<div className={styles.way}>
 			<div className={styles.wrapper}>
 				<h1 className={styles.title}>Як дозріли ДОЗРІЛІ:</h1>
-				<div className={styles.arrow}>
+				{/* <div className={styles.arrow}>
 					<div className={styles.line}></div>
 					<div className={styles.right}></div>
 				</div>
 				<img className={styles.leaf} src={Leaf} alt="leaf" />
-				<img className={styles.tree} src={Tree} alt="tree" />
+				<img className={styles.tree} src={Tree} alt="tree" /> */}
 			</div>
 		</div>
 	);

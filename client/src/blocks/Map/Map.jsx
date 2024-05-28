@@ -9,7 +9,7 @@ const Map = () => {
 	return (
 		<div className={styles.map}>
 			<div className={styles.btn}>
-				{/* <JoinBtn isWideMode={true} /> */}
+				<JoinBtn isWideMode={true} />
 			</div>
 			<div className={styles.conteiner}>
 				<div className={styles.buttons}>
