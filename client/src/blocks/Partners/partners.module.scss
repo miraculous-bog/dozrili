@@ -33,9 +33,9 @@
 	vertical-align: middle;
 }
 .carouselitemstyles {
-	// height: 620px;
-	// @include mobile {
-	// 	width: 255px;
-	// }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// width: auto;
 	padding: 10px;
 }

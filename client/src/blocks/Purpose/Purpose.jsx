@@ -11,7 +11,7 @@ const Values = () => {
 			<div className={styles.wrapper}>
 				<img className={styles.image} src={Oranges} alt="Oranges" />
 				<div className={styles.info}>
-					<h5 className={styles.title}><span className={styles.highlight}>Наша мета</span> - забезпечити платформу для розвитку як особистісного, так і професійного для молодих людей, задля їх реалізації в Україні та сприяння позитивним змінам в державі.</h5>
+					<h5 className={styles.titletext}><span className={styles.highlight}>Наша мета</span> - забезпечити платформу для розвитку як особистісного, так і професійного для молодих людей, задля їх реалізації в Україні та сприяння позитивним змінам в державі.</h5>
 					<ul className={styles.list}>
 						<li className={styles.item}>Проводимо безкоштовні практико-орієнтовані воркшопи для покращення мʼяких навичок</li>
 						<li className={styles.item}>Реалізуємо менторські програми за власною методологією</li>

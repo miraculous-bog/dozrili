@@ -18,7 +18,7 @@
 	padding: 0 20px;
 	position: relative;
 	@include tablet {
-		height: 277px;
+		height: 100px;
 	}
 }
 .title {
@@ -30,7 +30,7 @@
 	z-index: 1;
 	position: relative;
 	@include tablet {
-		font-size: 24px;
+		font-size: 35px;
 	}
 }
 .leaf {
