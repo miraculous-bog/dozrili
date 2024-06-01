@@ -6,6 +6,7 @@ const getUser = async (req, res, next) => {
 
 	if (req.user) {
 		const userId = req.user._id;
+		console.log(await User.findById(userId));
 		const { _id,name, created_date } = await User.findById(userId);
 		res.json({ user: { _id, name, created_date } });
 	} else {
