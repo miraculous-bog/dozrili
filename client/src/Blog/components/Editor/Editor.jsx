@@ -61,7 +61,7 @@ function Editor({ onClose, posts, addPost }) {
 
       const result = await response.json();
       onClose();
-      addPost([...posts, result.post]);
+      posts.length !== 0 && result.post ? addPost([...posts, result.post]) : null;
       console.log(result);
     } catch (error) {
       console.error('Error during the upload:', error);
@@ -97,7 +97,7 @@ function Editor({ onClose, posts, addPost }) {
         accept="image/*"
         onChange={handleImageChange}
       />
-       {error.image && <p className={styles.error}>Будь ласка, завантажте головне зображення статті.</p>}
+      {error.image && <p className={styles.error}>Будь ласка, завантажте головне зображення статті.</p>}
       {image && <p>Завантажене зображення: {image.name}</p>}
       <Button variant="contained" color="primary" onClick={handleSubmit}>Save</Button>
     </div>
