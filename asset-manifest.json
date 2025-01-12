@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dozrili/static/css/main.e6dd0ae0.css",
-    "main.js": "/dozrili/static/js/main.3702ed3a.js",
+    "main.js": "/dozrili/static/js/main.0eceaebd.js",
     "static/media/partner_Orange_Great.svg": "/dozrili/static/media/partner_Orange_Great.b33c136c5e37411cdcc63c1858445094.svg",
     "static/media/partner_ual.svg": "/dozrili/static/media/partner_ual.4a8705affdee02fddefd6cfeecfbed1b.svg",
     "static/media/partner_karitas.svg": "/dozrili/static/media/partner_karitas.e3d00ec4e90c6a544620a03743cae51e.svg",
@@ -38,10 +38,10 @@
     "static/media/plant.svg": "/dozrili/static/media/plant.6e933b2f50adbd876f0a.svg",
     "static/media/check.svg": "/dozrili/static/media/check.19d98e1907f32d238692.svg",
     "main.e6dd0ae0.css.map": "/dozrili/static/css/main.e6dd0ae0.css.map",
-    "main.3702ed3a.js.map": "/dozrili/static/js/main.3702ed3a.js.map"
+    "main.0eceaebd.js.map": "/dozrili/static/js/main.0eceaebd.js.map"
   },
   "entrypoints": [
     "static/css/main.e6dd0ae0.css",
-    "static/js/main.3702ed3a.js"
+    "static/js/main.0eceaebd.js"
   ]
 }
